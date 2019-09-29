@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Simple chat</title>
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src="/assets/simple-chat.js"></script>
+    <link href="/assets/styles.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1>Leave your message...</h1>
+    <div id="msgs-list">
+      <form>
+        <input id="author" type="text" name="author" placeholder="Your name" autocomplete="off" required>
+        <textarea id="msg" name="message" autocomplete="off" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <ul>
+        <% for(var i = 0; i < msgs.length; i++){ %>
+          <li>
+            <div class="author"><%= msgs[i].author %></div>
+            <div class="message"><%= msgs[i].text %></div>
+          </li>
+        <% } %>
+      </ul>
+    </div>
+  </body>
+</html>

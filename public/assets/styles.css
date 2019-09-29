@@ -1,0 +1,84 @@
+body{
+    background: #0d1521;
+    font-family: tahoma;
+    color: #989898;
+}
+
+#msgs-list{
+    position: relative;
+    width: 95%;
+    background: #090d13;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#msgs-list form:after{
+    margin: 0;
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#author{
+    width: 65%;
+    padding: 20px;
+    margin: 5px;
+    background:#181c22;
+    border: 0;
+    float: left;
+    font-size: 20px;
+    color: #989898;
+}
+
+#msg{
+  width: 65%;
+  padding: 20px;
+  margin: 5px;
+  background:#181c22;
+  border: 0;
+  float: left;
+  font-size: 20px;
+  color: #989898;
+  height: 100px;
+  resize: none;
+  font-family: inherit;
+}
+
+button{
+    padding: 20px;
+    width: 25%;
+    float: right;
+    background: #23282e;
+    border: 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: arial;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.author{
+  font-size: 16px;
+  font-style: italic;
+  padding: 10px;
+}
+
+.message{
+  padding: 10px;
+  background-color: #171f2b;
+}
